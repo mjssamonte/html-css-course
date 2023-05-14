@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 3 | Hover, Transitions, Shadows</title>
+  <style>
+    .bootstrap-button {
+      background-color: rgb(121,82,179);
+      color: white;
+      border: none;
+      border-radius: 2px;
+      height: 35px;
+      width: 110px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.15s;
+    }
+    .bootstrap-button:hover {
+      background-color: rgb(110, 75, 162);
+    }
+    .bootstrap-download-button {
+      background-color: white;
+      color: rgb(108,117,125);
+      border: 1px solid rgb(108,117,125);
+      border-radius: 2px;
+      height: 35px;
+      width: 110px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.15s, color 0.15s;
+    }
+    .bootstrap-download-button:hover {
+      background-color: rgb(108,117,125);
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <p>3d. Bootstrap</p>
+  <button class="bootstrap-button">
+    Get started
+  </button>
+  <button class="bootstrap-download-button">
+    Download
+  </button>
+</body>
+</html>
