@@ -1,0 +1,47 @@
+body {
+  font-family: Arial;
+}
+
+.container {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.6);
+  padding: 15px;
+  width: 620px;
+}
+
+.profile {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.input-post {
+  width: 400px;
+  font-size: 20px;
+  vertical-align: middle;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: none;
+}
+
+.tweet-button {
+  background-color: rgb(65, 162, 247);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: none;
+  border-radius: 30px;
+  vertical-align: middle;
+  margin-left: 5px;
+  cursor: pointer;
+}
