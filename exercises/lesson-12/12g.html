@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 12 | CSS Flexbox</title>
+  <style> 
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    p {
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-bottom: 5px;
+    }
+
+    .setting {
+      width: 400px;
+      margin: 0 auto;
+    }
+
+    .flex {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .user-detail {
+      flex: 1;
+      margin-left: 10px;
+    }
+
+    .follow-button {
+      background-color: rgb(63, 145, 217);
+      color: white;
+      padding: 8px 20px;
+      border-radius: 5px;
+      font-weight: bold;
+      font-size: 18px;
+      border: none;
+      width: 100px;
+    }
+
+    .profile-picture {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+    }
+
+    .name {
+      font-weight: bold;
+    }
+
+    .bio, .rating {
+      color: gray;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="setting">
+    <div class="flex">
+      <img class="profile-picture" src="images/cat.jpg" alt="profile">
+      <div class="user-detail">
+        <p class="name">Oliver</p>
+        <p class="bio">the cat</p>
+        <p class="rating">Popular</p>
+      </div>
+      <button class="follow-button">
+        Follow
+      </button>
+    </div>
+    
+    <div class="flex">
+      <img class="profile-picture" src="images/cat2.jpg" alt="profile">
+      <div class="user-detail">
+        <p class="name">Mimi</p>
+        <p class="bio">Sleepy Cat</p>
+        <p class="rating">Popular</p>
+      </div>
+      <button class="follow-button">
+        Follow
+      </button>
+    </div>
+
+    <div class="flex">
+      <img class="profile-picture" src="images/dog.jpg" alt="profile">
+      <div class="user-detail">
+        <p class="name">Rex</p>
+        <p class="bio">Happy Bulldog</p>
+        <p class="rating">Popular</p>
+      </div>
+      <button class="follow-button">
+        Follow
+      </button>
+    </div>
+  </div>
+</body>
+</html>
