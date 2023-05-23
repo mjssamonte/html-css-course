@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 12 | CSS Flexbox</title>
+  <style> 
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    p {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    .setting {
+      align-items: center;
+      border-width: 1px;
+      border-style: solid;
+      border-color: rgb(190, 190, 190);
+      border-radius: 5px;
+      padding: 0 15px;
+      width: 400px;
+    }
+
+    .flex {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .item {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .badge {
+      background-color: rgb(94, 107, 208);
+      color: white;
+      padding: 8px 20px;
+      border-radius: 20px;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="setting">
+    <div class="flex">
+      <p class="item">Home</p>
+      <p class="badge">14</p>
+    </div>
+    <div class="flex">
+      <p class="item">Notifications</p>
+      <p class="badge">3</p>
+    </div>
+    <div class="flex">
+      <p class="item">Messages</p>
+      <p class="badge">5</p>
+    </div>
+  </div>
+</body>
+</html>
