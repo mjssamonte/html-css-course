@@ -6,17 +6,84 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lesson 13 | Nested Flexbox</title>
   <link rel="stylesheet" href="styles/13b.css">
+  <style>
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    p {
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-bottom: 5px;
+    }
+
+    .card {
+      width: 500px;
+      padding: 15px 20px;
+      border: 1px solid rgb(213, 213, 213);
+      border-radius: 5px;
+      box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.15);
+    }
+
+    .title {
+      font-size: 16px;
+      color: rgb(147, 147, 147);
+      margin-bottom: 10px;
+    }
+
+    .profile-picture {
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center;
+      padding: 10px;
+      margin-left: -5px;
+    }
+
+    .message-detail {
+      display: flex;
+    }
+
+    .right-side {
+      flex: 1;
+    }
+
+    .message-info {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .subject {
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .time, .message {
+      color: gray;
+    }
+
+    .promotion {
+      font-weight: 700;
+    }
+
+  </style>
 </head>
 <body>
-  <div class="flex">
-    <div class="col-1"></div>
-    <div class="col-2">
-      <div>
-        <p>row1</p>
-        <p>row2</p>
+  <div class="card">
+    <p class="title">ALL INBOXES</p>
+    <div class="message-detail">
+      <img class="profile-picture" src="cat.jpg" alt="profile">
+      <div class="right-side">
+        <div class="message-info">
+          <p class="subject">Chewy Promotions</p>
+          <p class="time">4:48 PM</p>
+        </div>
+        <p class="promotion">Biggest sales of the year!</p>
+        <p class="message">Hey there! We're writing to tell you about our...</p>
       </div>
-      <p>row2</p>
-    </div>
+   </div>
   </div>
 </body>
 </html>
