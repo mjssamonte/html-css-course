@@ -1,0 +1,24 @@
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.col-1 {
+  background-color: lightpink;
+  width: 100px;
+}
+
+
+.col-2 {
+  background-color: lightblue;
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding-bottom: 15px;
+}
+
+p {
+ margin-top: 0;
+ margin-bottom: 0;
+}
