@@ -1,0 +1,38 @@
+.sidebar {
+  background-color: green;
+  color: white;
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100px;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.modal {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 330px;
+}
+
+.modal .title {
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.modal .content {
+  margin: 12px 0;
+  font-weight: 500;
+}
