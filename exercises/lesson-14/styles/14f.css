@@ -1,0 +1,60 @@
+.sidebar {
+  display: flex;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 300px;
+}
+
+.users {
+  width: 80px;
+  background-color: rgb(37, 37, 37);
+  padding-top: 15px;
+}
+
+.user-profile-picture {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  padding: 2px 10px; 
+}
+
+.channels {
+  width: 220px;
+  padding: 15px 20px;
+  background-color: rgb(60, 60, 60);
+}
+
+.channel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.channel-header p {
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.channel-header button {
+  color: rgb(171, 171, 171);
+  font-size: 14px;
+  background-color: rgb(60, 60, 60);
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+
+.channel-list {
+  margin-top: 10px;
+  color: rgb(145, 145, 145);
+}
+
+
+.channel-list p {
+  margin-bottom: 15px;
+}
