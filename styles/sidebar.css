@@ -5,4 +5,33 @@
   bottom: 0;
   top: 55px;
   width: 72px;
+  padding-top: 5px;
+}
+
+.home-icon,
+.explore-icon,
+.subscriptions-icon,
+.originals-icon,
+.youtube-music-icon,
+.library-icon {
+  width: 24px;
+  margin-bottom: 6px;
+}
+
+
+.icon-container {
+  height: 74px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.icon-container span {
+  font-size: 10px;
+}
+
+.icon-container:hover {
+  background-color: rgba(227, 227, 227, 0.5);
 }
