@@ -21,6 +21,13 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
+  color: black;
+  text-decoration: none;
+}
+
+.video-title:hover, 
+.video-author:hover {
+  cursor: pointer;
 }
 
 .video-author,  .video-stats {
@@ -55,3 +62,62 @@
   border-radius: px;
   font-weight: 500;
 } 
+
+
+.channel-picture {
+  position: relative;
+}
+
+.channel-detail-container {
+  position: absolute;
+  background-color: white;
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+  left: 0;
+  bottom: -80px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+}
+
+.channel-profile-picture {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.profile-detail {
+  width: 185px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.profile-user-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: black;
+}
+
+.profile-user-stats {
+  color: rgb(83, 83, 83);
+}
+
+.video-info-grid a {
+  cursor: default;
+}
+
+.channel-picture:hover {
+  cursor: pointer;
+}
+
+.channel-picture:hover .channel-detail-container {
+  opacity: 1;
+}
