@@ -35,3 +35,26 @@
 .icon-container:hover {
   background-color: rgba(227, 227, 227, 0.5);
 }
+
+@media (min-width: 1200px) {
+  .sidebar {
+    width: 200px;
+  }
+  .icon-container {
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .icon-container img {
+    margin-top: 3px;
+    margin-right: 20px;
+  }
+  .icon-container span {
+    width: 110px;
+    font-size: 13px;
+  }
+  body {
+    padding-left: 220px;
+  }
+}
